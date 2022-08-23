@@ -1,0 +1,32 @@
+package datastructures;
+
+import java.util.Scanner;
+
+public class GCD2 {
+	
+	static int EuclidGcd(int a,int b)
+	{
+		while(a!=b)
+		{
+		if(a>b)
+		{
+			a=a-b;
+		}
+		else
+		{
+			b=b-a;
+		}
+		}
+		return a;
+	}
+	public static void main(String[] args) {
+		Scanner sn=new Scanner(System.in);
+		System.out.println("enter 1st number");
+		int a=sn.nextInt();
+		System.out.println("enter 2nd number");
+		int b=sn.nextInt();
+		System.out.println(EuclidGcd(a,b));
+		
+	}
+
+}

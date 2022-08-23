@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register page</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form">
+<form action="/register" method="GET">
+<h2>Login</h2>
+
+<div class="input-box">
+<i class="fa fa-user" aria-hidden="true"></i>
+<input type="text" name="login" placeholder="login" required>
+</div>
+
+<div class="input-box">
+<i class="fa fa-user" aria-hidden="true"></i>
+<input type="email" name="email" placeholder="Email">
+</div>
+
+
+<div class="input-box">
+<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+<input type="password" name="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,})" title="must contain at least one uppercase and one lowercase letter,and atleast 8or more characters" required>
+</div>
+
+<div class="input-box">
+<input type="submit" name="sign-in" value="Register">
+</div>
+
+
+
+</form>
+</div>
+</body>
+</html>

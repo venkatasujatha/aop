@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- this is our beans -->
+    
+    <bean id="student1" class="com.tectoro.model.Student">
+    <property name="studentId">
+    <value>123</value>
+    
+    </property>
+    <property name="studentName">
+    
+    <value>suji</value>
+    </property>
+    <property name="studentAddress">
+    
+    <value>hyderabad</value>
+    </property>   
+    </bean>
+    
+    </beans>
